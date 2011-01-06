@@ -21,8 +21,7 @@
  * Software Foundation website at <http://www.gnu.org/licenses/>.
  *
  * PHP version 5
- * @copyright  LU-Hosting 2010, Andreas Schempp 2010
- * @author     Leo Unglaub <leo@leo-unglaub.net>
+ * @copyright  Andreas Schempp 2010
  * @author     Andreas Schempp <andreas@schempp.ch>
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  * @version    $Id$
@@ -32,9 +31,5 @@
 /**
  * Backend modules
  */
-$GLOBALS['BE_MOD']['helpdesk']['joomlaboard_import'] = array
-(
-	'callback'		=> 'ModuleJoomlaboardImport',
-	'icon'			=> 'system/modules/joomlaboard_import/html/icon.png',
-);
+$GLOBALS['TL_LANG']['MOD']['joomlaboard_import'] = array('Joomlaboard Import', 'Import a Joomlaboard into Contao\'s Helpdesk/Forum');
 
