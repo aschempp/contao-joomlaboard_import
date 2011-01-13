@@ -54,7 +54,7 @@ class ModuleJoomlaboardImport extends BackendModule
 		
 		$objSource = new SelectMenu($this->prepareForWidget(array('label'=>&$GLOBALS['TL_LANG']['joomlaboard_import']['source'], 'options'=>$arrDBs, 'eval'=>array('mandatory'=>true, 'includeBlankOption'=>true)), 'source'));
 		$objPrefix = new TextField($this->prepareForWidget(array('label'=>&$GLOBALS['TL_LANG']['joomlaboard_import']['prefix'], 'eval'=>array('mandatory'=>true)), 'prefix', 'jos_'));
-		$objMGroup = new CheckboxWizard($this->prepareForWidget(array('label'=>&$GLOBALS['TL_LANG']['joomlaboard_import']['mgroup'], 'foreignKey'=>'tl_member_group.name', 'eval'=>array('multiple'=>true)), 'mgroup'));
+		$objMGroup = new CheckBoxWizard($this->prepareForWidget(array('label'=>&$GLOBALS['TL_LANG']['joomlaboard_import']['mgroup'], 'foreignKey'=>'tl_member_group.name', 'eval'=>array('multiple'=>true)), 'mgroup'));
 		$objMLookup = new RadioButton($this->prepareForWidget(array('label'=>&$GLOBALS['TL_LANG']['joomlaboard_import']['mlookup'], 'options'=>array('nolookup','email','username'), 'reference'=>&$GLOBALS['TL_LANG']['joomlaboard_import']), 'mlookup', 'nolookup'));
 		
 		if ($this->Input->post('FORM_SUBMIT') == 'tl_joomlaboard_import')
